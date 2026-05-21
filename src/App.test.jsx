@@ -1,10 +1,10 @@
 import { describe, expect, test } from '@jest/globals'
 import { render, screen } from '@testing-library/react'
-import Home from '../components/Home'
-import Header from '../components/Header'
-import About from '../components/About'
-import Links from '../components/Links'
-import ArticleList from '../components/ArticleList'
+import Home from './components/Home'
+import Header from './components/Header'
+import About from './components/About'
+import Links from './components/Links'
+import ArticleList from './components/ArticleList'
 
 describe('Blog components', () => {
   test('renders content from props', () => {

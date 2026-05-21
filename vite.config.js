@@ -6,6 +6,11 @@ import { fileURLToPath } from 'node:url'
 export default defineConfig({
   base: '/blog-site/',
   plugins: [react()],
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './src/setupTests.js',
+  },
   resolve: {
     alias: {
       '@jest/globals': fileURLToPath(new URL('./src/testUtils/jestGlobalsShim.js', import.meta.url)),

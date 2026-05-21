@@ -1,4 +1,3 @@
-import { describe, expect, test } from '@jest/globals'
 import { render, screen, within } from '@testing-library/react'
 import App from './App'
 import About from './components/About'

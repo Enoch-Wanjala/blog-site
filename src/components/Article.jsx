@@ -1,6 +1,6 @@
 // Article displays one blog post preview.
 // It receives title, date, and preview from ArticleList and has no child components.
-function Article({ title, date, preview }) {
+function Article({ title, date = 'January 1, 1970', preview }) {
 
     return (    
 

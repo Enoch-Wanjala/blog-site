@@ -1,7 +1,9 @@
 // About displays the blog author's profile summary.
 // It receives image, name, and text props from Home and does not connect to child components.
 
-function About({ image, name, text }) {
+const defaultImage = 'https://images.pexels.com/photos/36847299/pexels-photo-36847299/free-photo-of-yellow-robot-character-on-orange-background.png?auto=compress&cs=tinysrgb&dpr=1&w=500'
+
+function About({ image = defaultImage, name, text }) {
     return (
 
         <aside>

@@ -1,16 +1,31 @@
-import Header from './components/Header'
-import About from './components/About'
-import ArticleList from './components/ArticleList'
+import Home from './components/Home'
 import './App.css'
 
 function App() {
 
-  // this is our blog data contains all the information about the blog and the articles that we want to display on our website
+  // App stores the blog data and passes it to Home, which organizes the page sections.
   const blog = {
     name: "Enock Wanjala",
     title: "Let's Talk About Cars",
     image: "https://images.pexels.com/photos/36847299/pexels-photo-36847299/free-photo-of-yellow-robot-character-on-orange-background.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
     text: "I blog about cars.",
+    links: [
+      {
+        id: 1,
+        label: "Home",
+        href: "#home"
+      },
+      {
+        id: 2,
+        label: "Articles",
+        href: "#articles"
+      },
+      {
+        id: 3,
+        label: "About",
+        href: "#about"
+      }
+    ],
     posts: [
       {
         id: 1,
@@ -37,11 +52,7 @@ function App() {
   }
   
   return (
-    <>
-      < Header title={blog.title} />
-      < About image={blog.image} name={blog.name} text={blog.text} />
-      < ArticleList posts={blog.posts} />
-    </>
+    <Home blog={blog} />
   )
 }
 

@@ -1,5 +1,5 @@
-//this is our article component
-// it's receiving props from the parent component (ArticleList) which we are using to display the title, date, and preview of the article
+// Article displays one blog post preview.
+// It receives title, date, and preview from ArticleList and has no child components.
 function Article({ title, date, preview }) {
 
     return (    

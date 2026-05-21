@@ -1,7 +1,7 @@
-// this is our article list component
-// it's receiving a prop called posts from the parent component (App) which we are using to display the title, date, and preview of the article by passing it down to the Article component as props
 import Article from './Article'
 
+// ArticleList connects the post data to the Article component.
+// It receives posts from Home and creates one Article for each post.
 function ArticleList({ posts }) {
 
     return (        

@@ -1,5 +1,5 @@
-// this is our aboout component
-// it receives destructured props from App with the image, name, and the text to be displayed 
+// About displays the blog author's profile summary.
+// It receives image, name, and text props from Home and does not connect to child components.
 
 function About({ image, name, text }) {
     return (

@@ -14,8 +14,7 @@ src/
     Links.jsx
     ArticleList.jsx
     Article.jsx
-  _test_/
-    App.test.jsx
+  App.test.jsx
 ```
 
 ## Component Connections
